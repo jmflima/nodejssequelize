@@ -1,0 +1,18 @@
+<h1>Editando Endereço</h1>
+<form action="/address/update" method="POST" class="form">
+    <input type="hidden" name="UserId" value={{retorno.UserId}} />
+    <input type="hidden" name="id" value={{retorno.id}} />
+    <div class="form-control">
+        <label for="street">Rua</label>
+        <input type="text" name="street" value="{{retorno.street}}" >
+    </div>
+    <div class="form-control">
+        <label for="number">Número</label>
+        <input type="text" name="number" value="{{retorno.number}}"/>
+    </div>
+    <div class="form-control">
+        <label for="city">Cidade</label>
+        <input type="text" name="city" value="{{retorno.city}}"/>
+    </div>
+    <input type="submit" value="Editar" />
+</form>
